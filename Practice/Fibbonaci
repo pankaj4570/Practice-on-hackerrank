@@ -6,3 +6,15 @@ def fib(n):
         for i in range(0,n-2):
             lis.extend([lis[i]+lis[i+1]])
         print(lis)
+# Other way using Swapping 
+def fib(n):
+    a=0
+    b=1
+    lis=[a,b]
+    for i in range (2,n):
+        c= a+b # Swapping with b as c and a as b.
+        a=b
+        b=c
+        lis.extend([c])
+    print(lis)
+ 
