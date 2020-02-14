@@ -1,0 +1,9 @@
+inp = input("Enter any string:")
+alpha =[]
+num = []
+for i in inp:
+    if i.isalpha():
+        alpha.append(i)        
+    else:
+        num.append(i)
+print('Sorted string is:', ''.join(sorted(alpha)+ sorted(num)))
