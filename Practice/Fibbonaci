@@ -1,7 +1,9 @@
 def fib(n): 
     lis = [0,1]
     if n==1:
-        print(lis[0])
+        print([lis[0]])
+    elif n==0:
+        return []
     else:
         for i in range(0,n-2):
             lis.extend([lis[i]+lis[i+1]])
@@ -11,10 +13,15 @@ def fib(n):
     a=0
     b=1
     lis=[a,b]
-    for i in range (2,n):
-        c= a+b # Swapping with b as c and a as b.
-        a=b
-        b=c
-        lis.extend([c])
-    print(lis)
+    if n==1:
+        print([lis[0]])
+    elif n==0:
+        return []
+    else:
+        for i in range (2,n):
+            c= a+b # Swapping with b as c and a as b.
+            a=b
+            b=c
+            lis.extend([c])
+        print(lis)
  
