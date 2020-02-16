@@ -1,0 +1,13 @@
+lst=[]
+n=int(input())
+for i in range(n):
+    s = input().split()
+    cmd = s[0]
+    arg = s[1:]
+    if cmd != 'print':
+#         eval('lst.'+cmd+'('+','.join(arg)+')')
+#     
+        
+        eval('lst.{}{}'.format(cmd, tuple(map(int,arg))))
+    else:
+        print(lst)
