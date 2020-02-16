@@ -1,0 +1,8 @@
+Details_dict = {}
+N = int(input())
+for each in range(N):
+    Details = input().split()
+    Name = Details[0]
+    Details_dict[Name] = tuple(map(float, Details[1:]))
+query = input()
+print("{0:.2f}".format(sum(Details_dict[query])/len(Details_dict[query]),2))
