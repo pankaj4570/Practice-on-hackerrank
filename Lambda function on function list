@@ -1,0 +1,26 @@
+def sq(a):
+    return a*a
+def cube(a):
+    return a*a*a
+def fact(n):
+    if n ==1 or n ==0:
+        return 1    
+    else:
+        return n*fact(n-1)
+def fibo(n):
+    lst = [0,1]
+    if n == 0:
+        return None
+    elif n ==1:
+        return [0]
+    else:
+        for i in range(n-2):
+            lst.append(lst[i]+lst[i+1])
+        return tuple(lst)
+func= [sq, cube, fact, fibo]
+number = [0,1,2,3,4,5,6,7]
+# fact = Reduce(lambda x:x*x, number)
+# fact
+for i in number:
+    val = list(map(lambda x:x(i), func))
+    print(val)
