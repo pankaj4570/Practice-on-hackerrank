@@ -1,0 +1,9 @@
+from functools import reduce
+def fact(n):
+    n = int(input())
+    if n !=0:
+        fact = reduce(lambda x,y :x*y, range(1,n+1))
+    else:
+        fact = 1
+    print(fact)
+fact(n)
