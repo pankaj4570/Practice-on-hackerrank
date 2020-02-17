@@ -1,0 +1,13 @@
+c = 'H'
+n = int(input())
+for i in range(n):
+    print((i*c).rjust(n-1)+c+(i*c).ljust(n-1))
+for i in range(n+1):
+    print((n*c).center(2*n)+(n*c).center(6*n))
+for i in range((n+1)//2):
+    print(((5*n)*c).center((6*n)))
+for i in range(n+1):
+    print((n*c).center(2*n)+(n*c).center(6*n))
+for i in range((n-1),-1,-1):
+    print(((i*c).rjust(n-1)+c+(i*c).ljust(n-1)).center(10*n))
+ 
