@@ -1,0 +1,6 @@
+def solve(s):
+    Cap =[]
+    E = s.split(" ")
+    for i in E:
+        Cap.append(i.capitalize())
+    return " ".join(Cap)
